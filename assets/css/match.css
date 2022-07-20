@@ -1,0 +1,40 @@
+.match {
+    margin-left: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+.match-content {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 40px 30px;
+    
+    height: 170px;
+    
+    
+}
+
+.flag-image {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.flag-image img {
+    margin: 10px;
+}
+.match-content h2 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #161616;
+    margin-top: 20px;
+    text-align: center;
+}
+.match-content p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4D4D4D;
+    text-align: center;
+    margin-top: 20px;
+   
+}

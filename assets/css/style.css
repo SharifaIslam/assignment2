@@ -23,6 +23,7 @@
   .container {
     width: 1321px;
     margin: 0 auto;
+    
   }
 
   /* top section start */
@@ -30,9 +31,10 @@
   .greatest-show {
     display: flex;
     background-color: #161616;
+    justify-content: space-between;
     border-radius: 25px;
     height: 646px;
-    padding: 0px 79px 0px 100px;
+    padding: 0px 100px;
     align-items: center;
     margin-top: 50px;
 
@@ -43,6 +45,7 @@
     font-size: 60px;
     
   }
+
   .greatest-show-details p {
     font-weight: 400;
     font-size: 16px;
@@ -62,7 +65,7 @@
     color: white;
   }
 .greatest-show-picture img {
-    width: 581px;
+    width: 518px;
     height: 613px;
     margin-top: 35px;
 }
@@ -83,11 +86,12 @@
 }
 .side-bar button {
     width: 240px;
-    height: 60px;
+    height: 60px; 
     background-color: white;
     border-radius: 10px;
     display: block;
     margin-top: 30px;
+    
 }
 .side-bar span button{
     width: 240px;
@@ -143,6 +147,7 @@
     align-items: center;
     margin-top: 20px;
     padding-left: 20px;
+    margin-bottom: 16px;
     
 }
 .img1 {
@@ -183,7 +188,7 @@ footer hr {
    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 nav {
-    padding: 50px 0px 100px 0px;
+    padding: 50px 0px 0px 0px;
 }
 
 nav ul li {
@@ -196,4 +201,182 @@ footer a {
     font-size: 16px;
     margin: 20px auto;
     
+}
+.social-icon ul li {
+   color: #E8E8E8;
+   margin-top: 30px;
+   display: inline-block;
+   padding: 10px 20px;
+   margin-bottom: 50px;
+}
+.social-icon ul li i{
+    font-size: 25px;
+}
+
+
+/*****************************
+    reponsive in mobile 
+ *****************************/
+@media only screen and (max-width:576px){
+    .container {
+    width: 334px;
+    margin: 0px auto;
+    } 
+
+    .greatest-show {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 550px;
+    padding: 0 20px;
+     
+    }
+    .greatest-show-details h1 {
+    margin-top: 28px;
+    font-weight: 800;
+    font-size: 22px;
+    }
+    .greatest-show-details p {
+       padding: 0%;
+    } 
+
+    .greatest-show-details button {
+    width: 161px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    }
+    .greatest-show-picture img {
+        width: 233px;
+        height: 245px;
+        margin-top: 15px;
+    }
+    /* blog mobile responsive */
+.blog {
+    flex-direction: column;
+    margin-top: 30px;
+}
+.side-bar {
+    background-color: white;
+    padding: 0;
+    width: 100%;
+    
+}
+
+.side-bar button {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid #E8E8E8;
+    margin: 10px auto;
+
+    
+}
+.side-bar span button {
+    margin: 10px auto;
+
+}
+.article {
+    display: grid;
+    grid-template-columns:1fr;
+    justify-content: center;
+}
+/* footer section responsive */
+
+
+    footer ul li {
+        display: block;
+        padding: 20px 10px;
+    }
+ .social-icon ul li {
+        display: inline-block;
+    }
+ /* footer end */
+
+ }
+ /* --------------------
+ reponsive in tab
+ ---------------------- */
+@media screen and (min-width: 577px) and (max-width: 992px){
+    .container {
+        width: 85%;
+        margin: 0px auto;
+    }
+    .greatest-show {
+        height: 356px;
+        
+    }
+    .greatest-show-details h1 {
+        font-size: 30px;
+        font-weight: 800;
+        width: 100%;
+        
+
+    }
+    .greatest-show-details p {
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 10px;
+        line-height: 20px;
+    } 
+    .greatest-show-details button {
+        width: 151px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .greatest-show-picture img {
+        width: 300px;
+        height: 320px;
+      margin-left: 10px;
+    }
+    /* blog section tab reponsiveness */
+    .blog {
+
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .greatest-show {
+        padding: 0px 40px;
+    }
+    .side-bar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: white;
+        padding: 0px;
+        width: 100%;
+        align-items: baseline;
+        margin-bottom: 0px;
+        height: 140px;
+    }
+    .side-bar button {
+        width: 210px;
+        height: 64px;
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid #E8E8E8;
+        margin: 0px;
+        margin-bottom: 0px;
+    }
+    .side-bar span button {
+        margin: 30px auto;
+        width: 200px;
+    }
+    .article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 0px;
+    }
+    /* blog section responsive end */
+/* footer section responsive start */
+footer ul li {
+    display: block;
+    padding: 20px 10px;
+}
+.social-icon ul li {
+    display: inline-block;
+}
+   
 }
